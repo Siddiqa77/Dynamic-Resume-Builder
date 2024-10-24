@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px; /* Maximum width for the container */
+  margin: 0 auto; /* Centering the container */
+}
+
+.resume-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #333; /* Added color for better visibility */
+}
+
+.layout {
+  background-color: rgb(73, 37, 37);
+  color: white; /* Changed to white for contrast */
+  padding: 20px;
+  flex: 1; /* Allow to take equal space */
+  min-width: 250px; /* Minimum width for layout */
+}
+
+/* Left-hand side styling */
+.left-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Space around the container */
+}
+
+/* Image styling */
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgb(237, 179, 5);
+  margin: 20px auto; /* Center image with auto margins */
+}
+
+h3 {
+  font-size: 18px;
+  padding: 2%;
+  margin: 20px 0 10px;
+  box-shadow: 0 0 15px red;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Right-hand side styling */
+.right-container {
+  flex: 2; /* Take more space */
+  background-color: rgba(224, 255, 255, 0.697);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Space around the container */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px; /* Fixed height for textareas */
+}
+
+button {
+  width: 100%; /* Full width for buttons */
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #4cae4c; /* Darker shade on hover */
+}
+
+.resume-output {
+  margin-top: 20px;
+  width: 100%; /* Full width for output */
+}
+
+/* Styling for Resume Output */
+#resume-output {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #fff;
+  border-left: 6px solid #3498db;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#resume-output h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#resume-output p {
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+#resume-output p strong {
+  color: #e74c3c;
+}
+
+#resume-output .section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#print-resume {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+#print-resume:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.print-button-container {
+  text-align: center; /* Center align the button */
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .resume-section {
+      flex-direction: column; /* Stack layout vertically */
+  }
+
+  .layout {
+      width: 100%; /* Full width for layout */
+      margin: 0; /* No margin */
+  }
+
+  .left-container, .right-container {
+      width: 100%; /* Full width for both containers */
+      min-width: auto; /* Remove minimum width restriction */
+  }
+
+  .pic {
+      width: 120px; /* Smaller image on smaller screens */
+      height: 120px; /* Smaller height */
+  }
+
+  h1 {
+      font-size: 26px; /* Smaller title font size */
+  }
+
+  h3 {
+      font-size: 16px; /* Smaller subtitle font size */
+  }
+
+  button {
+      padding: 8px; /* Smaller button padding */
+      font-size: 14px; /* Smaller font size */
+  }
+
+  #resume-output h3 {
+      font-size: 1.5rem; /* Smaller output title */
+  }
+
+  #resume-output p {
+      font-size: 1rem; /* Smaller output text */
+  }
+}
