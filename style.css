@@ -19,7 +19,6 @@ body {
 #resume-output input,
 #resume-output textarea {
   outline: none;
-  background-color: transparent;
 
   font-family: "Poppins", serif;
   font-size: 16px;
