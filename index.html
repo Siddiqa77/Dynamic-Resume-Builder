@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Dynamic Resume Builder</title>
+  <title> edit Resume Builder</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <section class="container">
-  <div class="resume-section" >
-   
-    <div class="layout">
-      <!-- Left-hand side: Image side -->
-     
-        <div class="image-container">
-          <img src="mypic.jpg" alt="Profile Picture" class="pic">
-        </div>
+    <div class="resume-section">
 
+      <div class="layout">
+        <!-- Left-hand side: Image side -->
+
+        <p class="text"> Upload Profile Picture</p>
+        
+       <div class="image-container">
+        <img src="/pic.jpg" alt="Profile Picture" class="pic" id="profile-pic" />
+        <input type="file" id="image-upload" accept="image/*" class="pic-input" />
+      </div>
 
         <form id="career-cert-form">
           <!-- Career Objective -->
           <div class="form-group">
-              <label for="career-objective">Career Objective</label>
-              <textarea id="career-objective" placeholder="Enter your career objective" required></textarea>
+            <label for="about">About Me</label>
+            <textarea class="text" id="about" placeholder="Enter your career objective" required></textarea>
           </div>
 
           <!-- Certification 1 -->
           <div class="form-group">
-              <label for="cert1-name">Certification 1 Name</label>
-              <input type="text" id="cert1-name" placeholder="Enter the name of your first certification" required>
+            <label for="cert1-name">Certification 1 Name</label>
+            <input class="text" type="text" id="cert1-name" placeholder="Enter your first certification" required>
           </div>
 
           <div class="form-group">
-              <label for="cert1-description">Certification 1 Description</label>
-              <textarea id="cert1-description" placeholder="Enter a description for your first certification" required></textarea>
+            <label for="cert1-description">Certification 1 Description</label>
+            <textarea class="text" id="cert1-description" placeholder="Enter a description for your first certification"
+              required></textarea>
           </div>
 
           <!-- Certification 2 -->
           <div class="form-group">
-              <label for="cert2-name">Certification 2 Name</label>
-              <input type="text" id="cert2-name" placeholder="Enter the name of your second certification">
+            <label for="cert2-name">Certification 2 Name</label>
+            <input class="text" type="text" id="cert2-name" placeholder="Enter your second certification" required>
           </div>
 
           <div class="form-group">
-              <label for="cert2-description">Certification 2 Description</label>
-              <textarea id="cert2-description" placeholder="Enter a description for your second certification"></textarea>
+            <label for="cert2-description">Certification 2 Description</label>
+            <textarea class="text" id="cert2-description" placeholder="Enter a description for your second certification"
+              required></textarea>
           </div>
-      </form>
-    </div>
+          <div class="form-group">
+            <label for="language">Language</label>
+            <textarea class="text" id="language" placeholder="languages"
+              required></textarea>
+          </div>
+        </form>
+      </div>
 
       <!-- Right-hand side: info detail-->
       <div class="right-container">
@@ -56,61 +67,63 @@
           <h3>Personal Information</h3>
           <div class="form-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
+            <input class="text" type="text" id="name" placeholder="Enter your name" required>
           </div>
 
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+            <input class="text" type="email" id="email" placeholder="Enter your email" required>
           </div>
 
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="text" id="phone" placeholder="Enter your phone number" required>
+            <input class="text" type="text" id="phone" placeholder="Enter your phone number" required>
           </div>
 
           <div class="form-group">
             <label for="address">Address</label>
-            <input type="text" id="address" placeholder="Enter your address" required>
+            <input class="text" type="text" id="address" placeholder="Enter your address" required>
           </div>
 
           <div class="form-group">
             <label for="skills">Skills</label>
-            <textarea id="skills" placeholder="List your skills (comma-separated)" required></textarea>
+            <textarea class="text" id="skills" placeholder="List your skills (comma-separated)" required></textarea>
           </div>
 
           <div class="form-group">
             <label for="experience">Experience</label>
-            <textarea id="experience" placeholder="Describe your experience" required></textarea>
+            <textarea class="text" id="experience" placeholder="Describe your experience" required></textarea>
           </div>
 
           <div class="form-group">
             <label for="education">Education</label>
-            <textarea id="education" placeholder="Describe your education" required></textarea>
+            <textarea class="text" id="education" placeholder="Describe your education" required></textarea>
           </div>
-          <button type="submit">Generate Resume</button>
-        
+          
+          <button class="button" type="submit"><span>Generate Resume</span></button>
+
         </form>
-      
+
       </div>
-     
+
     </div>
     <div class="resume-output" id="resume-output">
       <!-- Generated resume will appear here -->
-  </div>
+    </div>
 
-      <!-- <button type="submit">Generate Resume</button> -->
+   
     <div class="print-button-container">
-      <button id="print-resume">Print Resume</button>
-  </div>
+      <button class="button" id="print-resume"><span>Print Resume</span></button>
+    </div>
 
-    
+
   </section>
-  
-    
-  
 
-  
+
+
+
+
   <script src="script.js"></script>
 </body>
+
 </html>

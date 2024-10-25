@@ -1,3 +1,11 @@
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Headland one */
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Meriweather */
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,35 +16,58 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f4f4f4;
 }
+#resume-output input,
+#resume-output textarea {
+  outline: none;
+  background-color: transparent;
+
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
 
 .container {
   max-width: 900px; /* Maximum width for the container */
-  margin: 0 auto; /* Centering the container */
+  margin: 0 auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Centering the container */
 }
-
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", serif;
+}
 .resume-section {
   width: 100%;
   margin: 0 auto;
+  margin-top: 7px;
   display: flex;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Allow wrapping on smaller screens */
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 30px;
+  font-family: "Headland One", serif;
   color: #333; /* Added color for better visibility */
 }
 
 .layout {
-  background-color: rgb(73, 37, 37);
+  background-color: #043280;
   color: white; /* Changed to white for contrast */
   padding: 20px;
   flex: 1; /* Allow to take equal space */
-  min-width: 250px; /* Minimum width for layout */
+  min-width: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Minimum width for layout */
 }
 
 /* Left-hand side styling */
@@ -59,15 +90,18 @@ h1 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid rgb(237, 179, 5);
-  margin: 20px auto; /* Center image with auto margins */
+  border: 5px solid rgb(191, 177, 136);
+  margin: 20px auto;
 }
 
 h3 {
-  font-size: 18px;
-  padding: 2%;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 3%;
   margin: 20px 0 10px;
-  box-shadow: 0 0 15px red;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin-top: 5%;
   margin-bottom: 5%;
   color: black;
@@ -77,7 +111,7 @@ h3 {
 /* Right-hand side styling */
 .right-container {
   flex: 2; /* Take more space */
-  background-color: rgba(224, 255, 255, 0.697);
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,6 +126,7 @@ h3 {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  font-family: "Merriweather", serif;
 }
 
 .form-group input,
@@ -106,21 +141,43 @@ textarea {
   height: 100px; /* Fixed height for textareas */
 }
 
-button {
-  width: 100%; /* Full width for buttons */
-  padding: 10px;
-  background-color: #5cb85c;
-  color: white;
+.button {
+  border-radius: 6px;
+  background-color: #f4511e;
   border: none;
-  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 500px;
+  transition: all 0.5s;
   cursor: pointer;
-  transition: background-color 0.3s; /* Smooth transition */
+  margin: 1px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-button:hover {
-  background-color: #4cae4c; /* Darker shade on hover */
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .resume-output {
   margin-top: 20px;
   width: 100%; /* Full width for output */
@@ -130,27 +187,35 @@ button:hover {
 #resume-output {
   margin-top: 40px;
   padding: 30px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-left: 6px solid #3498db;
+  border-right: 6px solid #3498db;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 #resume-output h3 {
-  font-size: 2rem;
-  color: #2c3e50;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 3%;
+  margin: 20px 0 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: black;
+  border-radius: 10px;
 }
 
 #resume-output p {
   font-size: 1.1rem;
-  color: #34495e;
+  color: black;
+  font-family: "Poppins", serif;
   line-height: 1.7;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
 #resume-output p strong {
@@ -166,18 +231,17 @@ button:hover {
 }
 
 #print-resume {
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  padding: 10px 15px; /* Padding for the button */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Font size */
-  transition: background-color 0.3s; /* Smooth transition */
-}
-
-#print-resume:hover {
-  background-color: #45a049; /* Darker green on hover */
+  border-radius: 6px;
+  background-color: #065127;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
 }
 
 .print-button-container {
@@ -188,42 +252,43 @@ button:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .resume-section {
-      flex-direction: column; /* Stack layout vertically */
+    flex-direction: column; /* Stack layout vertically */
   }
 
   .layout {
-      width: 100%; /* Full width for layout */
-      margin: 0; /* No margin */
+    width: 100%; /* Full width for layout */
+    margin: 0; /* No margin */
   }
 
-  .left-container, .right-container {
-      width: 100%; /* Full width for both containers */
-      min-width: auto; /* Remove minimum width restriction */
+  .left-container,
+  .right-container {
+    width: 100%; /* Full width for both containers */
+    min-width: auto; /* Remove minimum width restriction */
   }
 
   .pic {
-      width: 120px; /* Smaller image on smaller screens */
-      height: 120px; /* Smaller height */
+    width: 120px; /* Smaller image on smaller screens */
+    height: 120px; /* Smaller height */
   }
 
   h1 {
-      font-size: 26px; /* Smaller title font size */
+    font-size: 26px; /* Smaller title font size */
   }
 
   h3 {
-      font-size: 16px; /* Smaller subtitle font size */
+    font-size: 16px; /* Smaller subtitle font size */
   }
 
   button {
-      padding: 8px; /* Smaller button padding */
-      font-size: 14px; /* Smaller font size */
+    padding: 8px; /* Smaller button padding */
+    font-size: 14px; /* Smaller font size */
   }
 
   #resume-output h3 {
-      font-size: 1.5rem; /* Smaller output title */
+    font-size: 1.5rem; /* Smaller output title */
   }
 
   #resume-output p {
-      font-size: 1rem; /* Smaller output text */
+    font-size: 1rem; /* Smaller output text */
   }
 }
