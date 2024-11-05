@@ -25,49 +25,59 @@
         <form id="career-cert-form">
           <!-- Career Objective -->
           <div class="form-group">
-            <label for="about">About Me</label>
-            <textarea class="text" id="about" placeholder="Enter your career objective" required></textarea>
+            <label class="about" for="about">About Me</label>
+            <textarea  id="about" placeholder="Enter about yourself" required></textarea>
           </div>
 
           <!-- Certification 1 -->
           <div class="form-group">
             <label for="cert1-name">Certification 1 Name</label>
-            <input class="text" type="text" id="cert1-name" placeholder="Enter your first certification" required>
+            <input type="text" id="cert1-name" placeholder="Enter your first certification" required>
           </div>
 
           <div class="form-group">
             <label for="cert1-description">Certification 1 Description</label>
-            <textarea class="text" id="cert1-description" placeholder="Enter a description for your first certification"
+            <textarea  class="text" id="cert1-description" placeholder="Enter a description for your first certification"
               required></textarea>
           </div>
 
           <!-- Certification 2 -->
           <div class="form-group">
             <label for="cert2-name">Certification 2 Name</label>
-            <input class="text" type="text" id="cert2-name" placeholder="Enter your second certification" required>
+            <input  type="text" id="cert2-name" placeholder="Enter your second certification" required>
           </div>
 
           <div class="form-group">
             <label for="cert2-description">Certification 2 Description</label>
-            <textarea class="text" id="cert2-description" placeholder="Enter a description for your second certification"
+            <textarea id="cert2-description" placeholder="Enter a description for your second certification"
               required></textarea>
           </div>
           <div class="form-group">
             <label for="language">Language</label>
-            <textarea class="text" id="language" placeholder="languages"
+            <textarea id="language" placeholder="languages"
               required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="date">Date Of Birth</label>
+            <input type="date" id="date" name="date" required>
           </div>
         </form>
       </div>
 
       <!-- Right-hand side: info detail-->
       <div class="right-container">
+        <h1 class="name-heading" id="fullname"></h1>
         <h1>Dynamic Resume Builder</h1>
         <form id="resume-form">
           <h3>Personal Information</h3>
           <div class="form-group">
             <label for="name">Full Name</label>
-            <input class="text" type="text" id="name" placeholder="Enter your name" required>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Profession</label>
+            <input class="span" type="text" id="profession" placeholder="Enter your profession" required>
           </div>
 
           <div class="form-group">
@@ -86,12 +96,12 @@
           </div>
 
           <div class="form-group">
-            <label for="skills">Skills</label>
+            <label for="skills">Technical Skills</label>
             <textarea class="text" id="skills" placeholder="List your skills (comma-separated)" required></textarea>
           </div>
 
           <div class="form-group">
-            <label for="experience">Experience</label>
+            <label for="experience">Professional Experience</label>
             <textarea class="text" id="experience" placeholder="Describe your experience" required></textarea>
           </div>
 

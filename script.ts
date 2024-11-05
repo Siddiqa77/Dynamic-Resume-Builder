@@ -1,5 +1,8 @@
 // Define interfaces for form data
 interface ResumeData {
+
+  fullname: string;
+  profession: string;
   name: string;
   email: string;
   phone: string;
@@ -21,6 +24,8 @@ function handleFormSubmit(event: Event): void {
   event.preventDefault();
 
   // Get form input values
+  const fullnameInput = document.getElementById("fullname") as HTMLInputElement;
+  const professionInput = document.getElementById("profession") as HTMLInputElement;
   const nameInput = document.getElementById("name") as HTMLInputElement;
   const emailInput = document.getElementById("email") as HTMLInputElement;
   const phoneInput = document.getElementById("phone") as HTMLInputElement;
@@ -54,6 +59,9 @@ function handleFormSubmit(event: Event): void {
 
   // Collect form data
   const resumeData: ResumeData = {
+   
+    fullname: fullnameInput.value,
+    profession: professionInput.value,
     name: nameInput.value,
     email: emailInput.value,
     phone: phoneInput.value,
@@ -98,7 +106,7 @@ function generateResume(data: ResumeData): void {
         <form id="career-cert-form">
           <!-- Career Objective -->
           <div class="form-group">
-            <label for="career-objective">Career Objective</label>
+            <label for="career-objective">About Me</label>
             <textarea id="career-objective" placeholder="Enter your career objective" readonly required>${data.about}</textarea>
           </div>
 
@@ -135,13 +143,17 @@ function generateResume(data: ResumeData): void {
 
       <!-- Right-hand side: info detail-->
       <div class="right-container">
-        <h1>Dynamic Resume Builder</h1>
+        <h1 class="name-heading" id="fullname">${data.name}</h1>
+        <span class="span" id="profession">${data.profession}</span>
+       
+        
         <form id="resume-form">
-          <h3>Personal Information</h3>
+      
           <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" id="name" placeholder="Enter your name" value="${data.name}" readonly required>
           </div>
+         
 
           <div class="form-group">
             <label for="email">Email</label>
